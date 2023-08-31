@@ -1,4 +1,4 @@
-/* font-family: 'Fredoka', sans-serif; */
+
 
 /* RESET RULES */
 
@@ -13,7 +13,17 @@ img {
 }
 
 body {
+    background-color: white;
     font-family: 'Fredoka', sans-serif;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #222222 ;
 }
 
 .float-left {
@@ -28,5 +38,38 @@ body {
     clear: both;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 /* FINE RESET RULES */
 
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #E53170;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* DEBUG RULES */
+
+.debug .container {
+    border: 1px solid red;
+    padding: 30px;
+}
+
+.debug .col{
+    border: 1px solid red;
+    padding: 30px;
+    max-width: 300px;
+    max-height: 100px;
+}
