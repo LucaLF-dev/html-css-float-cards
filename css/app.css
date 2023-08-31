@@ -1,0 +1,32 @@
+/* font-family: 'Fredoka', sans-serif; */
+
+/* RESET RULES */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.clear-both{
+    clear: both;
+}
+
+/* FINE RESET RULES */
+
