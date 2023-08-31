@@ -94,6 +94,11 @@ footer {
     color: #3AA3DE;
 }
  
+div > p.description { 
+    font-size: 22px;
+    text-align: justify;
+    text-align-last: center;
+}
 
 
 
