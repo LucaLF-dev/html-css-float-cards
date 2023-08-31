@@ -11,7 +11,6 @@
 img {
     max-width: 100%;
     
-   
 }
 
 body {
@@ -19,10 +18,21 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
+/*  -------- */
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #E53170;
+    text-align: center;
+}
+
+
 .container{
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px;
+
 }
 
 footer {
@@ -32,11 +42,12 @@ footer {
 
 .col {
     float: left;
-    width: calc((100% - 10px) / 3);
-    margin-right: 5px;
+    width: calc((100% - 30px) / 3);
+    margin-right: 15px;
     margin-bottom: 30px;
     min-width: 100px;
     background-color: #100E17;
+    box-shadow: 0 0 8px #100E17;
 }
 
 .clearfix::after{
@@ -55,19 +66,23 @@ footer {
 .card {
     float: left;
     width: calc(100% / 3);
-    height: 100px;
     
+}
+
+.card img{
+    display: block;
 }
 
 .card-description {
     color: white;
-   
     margin: 10px ;
-    display: inline-block
+    display: inline-block;
+    line-height: 30px;
 }
 
 .nome{
-    font-size: 22px;
+    font-size: 21px;
+
 }
 
 .lavoro, .email {
@@ -78,14 +93,9 @@ footer {
 .email{
     color: #3AA3DE;
 }
+ 
 
 
-.title {
-    font-size: 30px;
-    font-weight: 600;
-    color: #E53170;
-    text-align: center;
-}
 
 
 
