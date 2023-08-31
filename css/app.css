@@ -10,6 +10,7 @@
 
 img {
     max-width: 100%;
+   
 }
 
 body {
@@ -18,24 +19,19 @@ body {
 }
 
 .container{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 footer {
     background-color: #222222 ;
+    color: white;
 }
 
-.float-left {
+.col {
     float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.clear-both{
-    clear: both;
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
 }
 
 .clearfix::after{
@@ -43,6 +39,30 @@ footer {
     display: table;
     clear: both;
 }
+ 
+.col {
+    float: left;
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
+}
+
+.col:last-child{
+    margin-right: 0;
+}
+
+.card {
+    float: left;
+    width: calc((100% - 20px) / 3);
+    height: 100px;
+    margin-right: 10px;
+    display: block;
+    
+}
+
+
+
+
+
 
 /* FINE RESET RULES */
 
@@ -69,7 +89,10 @@ footer {
 
 .debug .col{
     border: 1px solid red;
-    padding: 30px;
-    max-width: 300px;
-    max-height: 100px;
+    min-height: 100px;
+    
+}
+
+.card{
+border: 1px solid blue;
 }
