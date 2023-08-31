@@ -10,6 +10,7 @@
 
 img {
     max-width: 100%;
+    
    
 }
 
@@ -21,6 +22,7 @@ body {
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    padding: 30px;
 }
 
 footer {
@@ -30,8 +32,11 @@ footer {
 
 .col {
     float: left;
-    width: calc((100% - 20px) / 3);
-    margin-right: 10px;
+    width: calc((100% - 10px) / 3);
+    margin-right: 5px;
+    margin-bottom: 30px;
+    min-width: 100px;
+    background-color: #100E17;
 }
 
 .clearfix::after{
@@ -40,31 +45,40 @@ footer {
     clear: both;
 }
  
-.col {
-    float: left;
-    width: calc((100% - 20px) / 3);
-    margin-right: 10px;
-}
 
-.col:last-child{
+.col:nth-child(3n+3){
     margin-right: 0;
 }
 
+
+
 .card {
     float: left;
-    width: calc((100% - 20px) / 3);
+    width: calc(100% / 3);
     height: 100px;
-    margin-right: 10px;
-    display: block;
     
 }
 
+.card-description {
+    color: white;
+   
+    margin: 10px ;
+    display: inline-block
+}
 
+.nome{
+    font-size: 22px;
+}
 
+.lavoro, .email {
+    font-weight: 300;
+    
+} 
 
+.email{
+    color: #3AA3DE;
+}
 
-
-/* FINE RESET RULES */
 
 .title {
     font-size: 30px;
@@ -75,24 +89,19 @@ footer {
 
 
 
-
-
-
-
-
 /* DEBUG RULES */
 
-.debug .container {
+/* .debug .container {
     border: 1px solid red;
-    padding: 30px;
+    
 }
 
 .debug .col{
     border: 1px solid red;
-    min-height: 100px;
     
 }
 
-.card{
-border: 1px solid blue;
-}
+.debug.card{
+
+    border: 1px solid blue;
+} */
